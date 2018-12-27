@@ -31,14 +31,14 @@
     },
     "powershelldscZip": {
       "type": "string",
-      "defaultValue": "/DSC/IISInstall.ps1.zip",
+      "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/tree/master/201-vmss-windows-webapp-dsc-autoscale/DSC/IISInstall.ps1.zip",
       "metadata": {
         "description": "Location of the PowerShell DSC zip file relative to the URI specified in the _artifactsLocation, i.e. /DSC/IISInstall.ps1.zip"
       }
     },
     "webDeployPackage": {
       "type": "string",
-      "defaultValue": "/WebDeploy/DefaultASPWebApp.v1.0.zip",
+      "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/tree/master/201-vmss-windows-webapp-dsc-autoscale/WebDeploy/DefaultASPWebApp.v1.0.zip",
       "metadata": {
         "description": "Location of the  of the WebDeploy package zip file relative to the URI specified in _artifactsLocation, i.e. /WebDeploy/DefaultASPWebApp.v1.0.zip"
       }
