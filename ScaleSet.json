@@ -81,7 +81,7 @@
       "osType": {
       "publisher": "MicrosoftWindowsServer",
       "offer": "WindowsServer",
-      "sku": "[parameters('windowsOSVersion')]",
+      "sku":"2016-Datacenter",
       "version": "latest",
       "webDeployPackageFullPath": "[concat(parameters('_artifactsLocation'), parameters('webDeployPackage'))]",
       "powershelldscZipFullPath": "[concat(parameters('_artifactsLocation'), parameters('powershelldscZip'))]"
