@@ -274,7 +274,7 @@
                   "forceUpdateTag": "[parameters('powershelldscUpdateTagVersion')]",
                   "settings": {
                     "configuration": {
-                      "url": "[variables('powershelldscZipFullPath')]",
+                      "url": "https://github.com/kmarri/SampleTemplate",
                       "script": "IISInstall.ps1",
                       "function": "InstallIIS"
                     },
