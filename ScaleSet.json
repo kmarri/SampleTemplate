@@ -84,9 +84,9 @@
       "sku":"2016-Datacenter",
       "version": "latest",
       "webDeployPackageFullPath": "[concat(parameters('_artifactsLocation'), parameters('webDeployPackage'))]",
-      "powershelldscZipFullPath": "[concat(parameters('_artifactsLocation'), parameters('powershelldscZip'))]"
-
-
+      "powershelldscZipFullPath": "[concat(parameters('_artifactsLocation'), parameters('powershelldscZip'))]",	     
+      "powershelldscArchiveFolder": "DSC",
+      "powershelldscArchiveFileName": "IISInstall.ps1.zip"
       },
       "imageReference": "[variables('osType')]",
       "computeApiVersion": "2017-12-01",
