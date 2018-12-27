@@ -1,7 +1,7 @@
 {
-    "$schema": "http://schema.management.azure.com/schemas/2015-01-01-preview/deploymentTemplate.json#",
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01-preview/deploymentTemplate.json",
     "contentVersion": "1.0.0.0",
-    "parameters": {         
+    "parameters": {
       "adminUsername": {
         "type": "string",
         "metadata": {
@@ -67,8 +67,8 @@
       "subnetName": "[concat(variables('vmssName'), 'subnet')]",
       "nicName": "[concat(variables('vmssName'), 'nic')]",
       "ipConfigName": "[concat(variables('vmssName'), 'ipconfig')]",
-      "addressPrefix": "10.124.0.0/16",
-      "subnetPrefix": "10.124.0.0/24",
+      "addressPrefix": "10.0.0.0/16",
+      "subnetPrefix": "10.0.0.0/24",
       "publicIPAddressName": "[concat(variables('vmssName'), 'publicip')]",
       "networkSecurityGroupName": "[concat(variables('vmssName'), 'nsg')]",
       "loadBalancerName": "[concat(variables('vmssName'), 'lb')]",
@@ -81,7 +81,7 @@
       "osType": {
       "publisher": "MicrosoftWindowsServer",
       "offer": "WindowsServer",
-      "sku": "2016-Datacenter",
+      "sku": "[parameters('windowsOSVersion')]",
       "version": "latest",
       "webDeployPackageFullPath": "[concat(parameters('_artifactsLocation'), parameters('webDeployPackage'))]",
       "powershelldscZipFullPath": "[concat(parameters('_artifactsLocation'), parameters('powershelldscZip'))]"
